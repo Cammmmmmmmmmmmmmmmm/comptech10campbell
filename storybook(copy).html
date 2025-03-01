@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a href="../">Back To Homepage</a>
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    
+    <style>
+        .center {
+            text-align: center;
+        }
+    </style>
+    <div class="center">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storybook(Copy)</title>
+</head>
+<script>
+    function show(pgid){
+        hideall();
+        document.getElementById(pgid).style.display='';
+    }
+    function hideall(){
+        for (i=0;i<20;i++){
+            theId = document.getElementById("pg"+i);
+            if (theId!=null)
+                document.getElementById("pg"+i).style.display='none';
+        }
+
+
+    }
+    function play(audid){
+        console.log(audid)
+        document.getElementById(audid).play();
+    }  
+    
+    
+    window.onload=function () {
+        show('pg1');
+    }
+
+</script>
+<h1>I Want A Monkey!</h1>
+<body>
+    <a href="#" onclick="show('pg1')">Title Page</a>
+    <a href="#" onclick="show('pg2')">2</a>
+    <a href="#" onclick="show('pg3')">3</a>
+    <a href="#" onclick="show('pg4')">4</a>
+    <a href="#" onclick="show('pg5')">5</a>
+    <a href="#" onclick="show('pg6')">6</a>
+    <a href="#" onclick="show('pg7')">7</a>
+    <a href="#" onclick="show('pg8')">8</a>
+    <a href="#" onclick="show('pg9')">9</a>
+    <a href="#" onclick="show('pg10')">10</a>
+
+
+
+<a name="pg1"></a>
+    <p id="pg1" style="display:none">
+        
+        <img src="iwantamonkey.png" width="70%" onclick="play('aud1')">
+        <audio id="aud1">
+            <source src="youtube_oCX-a1r1Gzk_audio.mp3" type="audio/mpeg">
+        </audio>
+        </p>
+        
+
+
+        <a name="pg2"></a>
+    <p id="pg2" style="display:none">
+        <img src="pg2.png" width="60%" onclick="play('aud2')">
+        <audio id="aud2">
+            <source src="hmmsound.mp3" type="audio/mpeg">
+        </audio>
+        <br> Wally was sure that he wanted a pet.<br> He talked to his Dad about which pet to get.
+        <a name="pg3"></a>
+    <p id="pg3" style="display:none">
+        <img src="pg3.png" width="60%" onclick="play('aud3')">
+        <audio id="aud3">
+            <source src="pg3.mp3" type="audio/mpeg">
+        </audio>
+        <br> “I want a Monkey who scratches his head!<br>
+
+        He’d swing in the house and he’d jump on the bed.”
+        </p>
+        <a name="pg4"></a>
+    <p id="pg4" style="display:none">
+        <img src="pg4.png" width="60%" onclick="play('aud4')">
+        <audio id="aud4">
+            <source src="pg4.mp3" type="audio/mpeg">
+        </audio>
+        <br> “Well,” said his Dad in a kind sort of way, <br>“Did you know that monkeys eat bugs everyday?”<br><br><br> “Oh No,” Wally said,
+        “We have none to eat.” <br><br><br>Mom likes to squash all the bugs with her feet.”
+        </p>
+        <a name="pg5"></a>
+    <p id="pg5" style="display:none">
+        <img src="pg5.png" width="60%" onclick="play('aud5')">
+        <audio id="aud5">
+            <source src="pg5.mp3" type="audio/mpeg">
+        </audio>
+        <br> “Then I want a Hippo!” he screamed to his Dad. <br>“He’d eat all our trash, and Mom would be glad!”<br> “Hippos need
+        water, it helps them stay cool.<br><br><br> I guess we can build him a giant sized pool.”<br> “No,” Wally said, “he’d be too big
+        to dry, We’d need a mountain of towels to try.”
+        </p>
+        <a name="pg6"></a>
+    <p id="pg6" style="display:none">
+        <img src="pg6.png" width="60%" onclick="play('aud6')">
+        <audio id="aud6">
+            <source src="pg6.mp3" type="audio/mpeg">
+        </audio>
+        <br> “I want an Otter who triple back flips, I’d practice swimming when we go for dips.”<br> “Did you know most otters
+        can whistle and chirp? <br><br><br>They growl and snort, and perhaps even burp?” “Oh,” <br><br><br>Wally said with a sad looking frown,
+        “We’d have to tell him to keep the noise down.”
+        </p>
+        <a name="pg7"></a>
+    <p id="pg7" style="display:none">
+        <img src="pg7.png" width="60%" onclick="play('aud7')">
+        <audio id="aud7">
+            <source src="pg7.mp3" type="audio/mpeg">
+        </audio>
+        <br> “Let’s get a Giraffe!” Wally said with a smile.<br> “I’d slide from his neck to a giant clothes pile!”<br><br><br> “Giraffes
+        hold the record for tallest of all.” “The jump from their head is a twenty foot fall!” “Gosh,” Wally said as he
+        looked at the ceiling,<br> He’d bump his head even if he were kneeling.”
+        </p>
+        <a name="pg8"></a>
+    <p id="pg8" style="display:none">
+        <img src="pg8.png" width="60%" onclick="play('aud8')">
+        <audio id="aud8">
+            <source src="pg8.mp3" type="audio/mpeg">
+        </audio>
+        <br> “Well how ‘bout a bunny?” he said to his Dad, <br><br><br>“A fluffy and floppy one can’t be that bad.” <br>“Bunnies like eating
+        and chew all your stuff.<br> Raising a bunny can really be tough.”<br><br><br>  “Wow,” Wally answered, “Is that really true?
+        Picking a pet is not easy to do.”
+        </p>
+        <a name="pg9"></a>
+    <p id="pg9" style="display:none">
+        <img src="pg9.png" width="60%" onclick="play('aud9')">
+        <audio id="aud9">
+            <source src="pg9.mp3" type="audio/mpeg">
+        </audio>
+        <br> “I want a fish!” Wally said,<br> “Let’s get one!”
+
+        “I think a Goldfish could be lots of fun.”<br>
+        <br>
+        <br>
+        
+        
+                “Hmm,” said his Dad, with a look of delight.<br>
+        
+                “Good idea Wally; I think that you’re right!”<br>
+                <br>
+                <br>
+                
+                
+                        “They’re really good swimmers and make funny faces.
+                
+                        <br>And if we get two, we could watch them have races!”
+        </p>
+        <a name="pg10"></a>
+    <p id="pg10" style="display:none">
+        <img src="pg10.png" width="60%" onclick="play('aud10')">
+        <audio id="aud10">
+            <source src="pg10.mp3" type="audio/mpeg">
+        </audio>
+        <br> “Okay,” said his Dad, “That’s just what we’ll do.
+
+        <br>One goldfish for me, one goldfish for you!”
+        </p>
+        
+
+</body>
+</div>
+</html>

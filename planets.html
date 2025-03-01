@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body style="background-color:hsla(0, 0%, 0%, 0.635);"></body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CueCard</title>
+    </head>
+    <script>
+        function show(pgid){
+            hideall();
+            document.getElementById(pgid).style.display='';
+        }
+        function hideall(){
+            for (i=0;i<20;i++){
+                theId = document.getElementById("pg"+i);
+                if (theId!=null)
+                    document.getElementById("pg"+i).style.display='none';
+            }
+    
+    
+        }
+        function play(audid){
+            console.log(audid)
+            document.getElementById(audid).play();
+        }  
+        
+        
+        window.onload=function () {
+            show('pg1');
+        }
+    
+    </script>
+    <style> 
+.container {
+           text-align: center;
+           font-size: larger;
+           color: rgb(255, 255, 255);
+       }
+       body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+    td{
+        border: 1px solid rgb(255, 0, 0);
+        width:25%;
+        text-align: center;
+        vertical-align: text-top;
+    }
+    table{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    td:hover{
+           background-color: rgba(7, 6, 96, 0.829);
+           transition: background-color 2000ms;
+        }
+        img{
+            filter: sepia(0.50)
+  
+        }
+        img:hover{
+          filter:brightness(1.1);
+          transition: 2000ms;
+        }
+        a{
+            text-decoration: none; /* Removes underline */
+            color: red;
+            background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(229, 229, 229));
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        a:hover{
+            transition: all 250ms ease;
+            transform: scale(1.05); /* Slightly enlarge */
+            color: rgb(255, 0, 0);
+        }
+        </style>
+<a href="/2htmlbasics/../index.html">Back To Homepage</a>
+<body>
+  <table>
+    <tr>
+        <td>
+            <img src="Traditional+Economy!.jpg" width="90%" onclick="play('aud11')" onmouseenter="desc1.style.visibility=''"
+                onmouseleave="desc1.style.visibility='hidden'" onclick="">
+            <div id="desc1" style="visibility:hidden" class="container">
+                <h4>Economies</h4>
+                <p>What is a Traditional Economy?</p>
+            </div>
+        </td>
+            <audio id="aud11">
+                <source src="w_js6mu2ng.mp4" type="audio/mpeg">
+            </audio></td>
+
+
+
+        <td><img src="Command-Economy.jpg.webp" alt="" width="90%" onclick="play('aud12')" onmouseenter="desc2.style.visibility=''"
+            onmouseleave="desc2.style.visibility='hidden'" onclick="">
+          <div id="desc2" style="visibility:hidden" class="container">
+            <h4>Economies</h4>
+            <p>What is a Command Economy?</p>
+          </div>
+          </td>
+            <audio id="aud12">
+                <source src="w_hhpfdai5.mp4" type="audio/mpeg">
+            </audio></td>
+
+
+        <td><img src="pngtree-market-economy-word-concepts-green-banner-png-image_7785492.png" alt="" width="90%" onclick="play('aud13')" onmouseenter="desc3.style.visibility=''"
+            onmouseleave="desc3.style.visibility='hidden'" onclick="">
+          <div id="desc3" style="visibility:hidden" class="container">
+            <h4>Economies</h4>
+            <p>What is a Market Economy?</p>
+          </div>
+          <audio id="aud13">
+            <source src="w_3i8e6ibc.mp4" type="audio/mpeg">
+        </audio></td>
+
+
+        <td><img src="mixedeconomy.webp" alt="" width="90%" onclick="play('aud14')" onmouseenter="desc4.style.visibility=''"
+            onmouseleave="desc4.style.visibility='hidden'" onclick="">
+          <div id="desc4" style="visibility:hidden" class="container">
+            <h4>Economies</h4>
+            <p>What is a Mixed Economy?</p>
+          </div>
+          <audio id="aud14">
+            <source src="w_hiwhhbpb.mp4" type="audio/mpeg">
+        </audio></td>
+    </tr>
+    <tr>
+        <td><img src="central-african-republic-flag.jpg" alt="" width="90%" onclick="play('aud15')" onmouseenter="desc5.style.visibility=''"
+            onmouseleave="desc5.style.visibility='hidden'" onclick="">
+          <div id="desc5" style="visibility:hidden" class="container">
+            <h4>Countries</h4>
+            <p>Guess What Type Of Economy Central African Republic Is?</p>
+          </div>
+          <audio id="aud15">
+            <source src="africanrepublic.mp4" type="audio/mpeg">
+        </audio></td>
+
+        <td><img src="north-korea-flag.jpg" alt="" width="90%" onclick="play('aud16')" onmouseenter="desc6.style.visibility=''"
+            onmouseleave="desc6.style.visibility='hidden'" onclick="">
+          <div id="desc6" style="visibility:hidden" class="container">
+            <h4>Countries</h4>
+            <p>Guess What Type Of Economy North Korea Is?</p>
+          </div>
+          <audio id="aud16">
+            <source src="w_u0cf334q.mp4" type="audio/mpeg">
+        </audio></td>
+
+        <td><img src="new-zealand-flag.jpg" alt="" width="90%" onclick="play('aud17')" onmouseenter="desc7.style.visibility=''"
+            onmouseleave="desc7.style.visibility='hidden'" onclick="">
+          <div id="desc7" style="visibility:hidden" class="container">
+            <h4>Countries</h4>
+            <p>Guess What Type Of Economy New Zealand Is?</p>
+          </div>
+          <audio id="aud17">
+            <source src="w_u9ubbuzj.mp4" type="audio/mpeg">
+        </audio></td>
+
+        <td><img src="peru-flag.jpg" alt="" width="90%" onclick="play('aud18')" onmouseenter="desc8.style.visibility=''"
+            onmouseleave="desc8.style.visibility='hidden'" onclick="">
+          <div id="desc8" style="visibility:hidden" class="container">
+            <h4>Countries</h4>
+            <p>Guess What Type Of Economy Peru Is?</p>
+          </div>
+          <audio id="aud18">
+            <source src="w_0ys0ug2f.mp4" type="audio/mpeg">
+        </audio></td>
+    </tr>
+    <tr>
+        <td><img src="international-trade.jpg" alt="" width="90%" onclick="play('aud19')" onmouseenter="desc9.style.visibility=''"
+            onmouseleave="desc9.style.visibility='hidden'" onclick="">
+          <div id="desc9" style="visibility:hidden" class="container">
+            <h4>Imports, Exports, and Exchange Rates</h4>
+            <p>What Is International Trade?</p>
+          </div>
+          <audio id="aud19">
+            <source src="w_gdz4tfej.mp4" type="audio/mpeg">
+        </audio></td>
+
+        <td><img src="trade_deficit.jpg" alt="" width="90%" onclick="play('aud20')" onmouseenter="desc10.style.visibility=''"
+            onmouseleave="desc10.style.visibility='hidden'" onclick="">
+          <div id="desc10" style="visibility:hidden" class="container">
+            <h4>Imports, Exports, and Exchange Rates</h4>
+            <p>What Is A Trade Deficit?</p>
+          </div>
+          <audio id="aud20">
+            <source src="w_mm878wjf.mp4" type="audio/mpeg">
+        </audio></td>
+
+        <td><img src="exchange-rate.png" alt="" width="90%" onclick="play('aud21')" onmouseenter="desc11.style.visibility=''"
+            onmouseleave="desc11.style.visibility='hidden'" onclick="">
+          <div id="desc11" style="visibility:hidden" class="container">
+            <h4>Imports, Exports, and Exchange Rates</h4>
+            <p>What Is An Exchange Rate?</p>
+          </div>
+          <audio id="aud21">
+            <source src="w_e30zia47.mp4" type="audio/mpeg">
+        </audio></td>
+
+        <td><img src="balance_of_payments.png" alt="" width="90%" onclick="play('aud22')" onmouseenter="desc12.style.visibility=''"
+            onmouseleave="desc12.style.visibility='hidden'" onclick="">
+          <div id="desc12" style="visibility:hidden" class="container">
+            <h4>Imports, Exports, and Exchange Rates</h4>
+            <p>What Are Balance Of Payments</p>
+          </div>
+          <audio id="aud22">
+            <source src="w_w7lo8emw.mp4" type="audio/mpeg">
+        </audio></td>
+    </tr>
+  </table>
+</body>
+</html>
